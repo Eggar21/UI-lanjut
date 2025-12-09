@@ -17,6 +17,12 @@ Saya telah berhasil menambahkan fitur **Kategori** dan merombak total antarmuka 
 * **Interaksi:** Menambahkan efek *hover* pada tombol dan daftar item, serta transisi halus (*smooth transitions*) saat menambah atau menghapus item.
 * **Responsif:** Tata letak kini sepenuhnya responsif dan tampil rapi (terpusat) di berbagai ukuran layar.
 
+### LINK VIDEO PRESENTASI 
+https://docs.google.com/videos/d/1WG0CV5wnTee5YU178ccsj0Y7L4n2kvX4eL7yNpQbwS0/edit?usp=sharing 
+
+### LINK TUGAS
+https://github.com/Eggar21/UI-lanjut.git
+
 
 #### 1. BEFORE
 ![alt text](image-1.png)

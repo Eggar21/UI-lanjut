@@ -1,38 +1,118 @@
-.main {
-  padding: 25px;
-  font-family: Arial, sans-serif;
-  background: #f8f9fa;
-  min-height: 250px;
-  text-align: center;
+:root {
+  /* Modern Cool Color Palette */
+  --primary-color: #6366f1; /* Indigo 500 */
+  --primary-hover: #4f46e5; /* Indigo 600 */
+  --secondary-color: #ec4899; /* Pink 500 */
+  --accent-color: #8b5cf6; /* Violet 500 */
+
+  /* Backgrounds */
+  --background-start: #eff6ff;
+  --background-end: #eef2ff;
+  --surface-color: rgba(255, 255, 255, 0.7); /* Glass effect base */
+
+  /* Text */
+  --text-main: #1e293b; /* Slate 800 */
+  --text-primary: #0f172a; /* Slate 900 */
+  --text-muted: #64748b; /* Slate 500 */
+
+  /* Borders & Shadows */
+  --border-color: rgba(255, 255, 255, 0.4);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
+  --radius: 1rem;
+  --font-family: 'Inter', sans-serif;
 }
 
-.header {
-  background: #179b1b;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.footer {
-  background: #ffafcc;
-  text-align: center;
-  padding: 12px;
-  color: #333;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
-  max-height: 100%;
+body {
+  font-family: var(--font-family);
+  background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout {
-  max-width: 600px;
-  margin: auto;
-  border: 2px solid #dee2e6;
-  border-radius: 10px;
-  background: black;
-  box-shadow: 0px 4px 10px rgba(18, 18, 223, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
 }
 
-.nav-link {
-  margin: 0 8px;
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Common Components */
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input, select {
+  font-family: inherit;
+  border: 1px solid rgba(203, 213, 225, 0.6);
+  border-radius: var(--radius);
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+}
+
+input:focus, select:focus {
+  border-color: var(--primary-color);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+  transform: translateY(-1px);
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--surface-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-glass);
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

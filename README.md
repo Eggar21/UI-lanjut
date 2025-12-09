@@ -1,6 +1,29 @@
-# akulaharjuna
+# eggarfickanto
 
-This template should help get you started developing with Vue 3 in Vite.
+## Pembaruan: Fitur Kategori & Perombakan UI Modern
+
+Saya telah berhasil menambahkan fitur **Kategori** dan merombak total antarmuka pengguna (UI) dengan desain yang modern dan responsif.
+
+### Fitur yang Diimplementasikan
+
+#### 1. Kategori (Categories)
+* **Pilihan Kategori:** Saat menambahkan tugas, Anda kini dapat memilih kategori: *Personal* (Pribadi), *Work* (Pekerjaan), *Shopping* (Belanja), atau *Urgent* (Mendesak).
+* **Lencana Visual:** Setiap tugas akan menampilkan lencana (*badge*) berwarna yang sesuai dengan kategorinya untuk identifikasi cepat.
+* **Integrasi Store:** Pinia store kini telah diperbarui untuk menyimpan data kategori secara persisten.
+
+#### 2. Perombakan UI Modern (Modern UI Overhaul)
+* **Design System:** Mengimplementasikan sistem desain baru menggunakan variabel CSS untuk menjaga konsistensi warna, spasi, dan tipografi (menggunakan font Inter).
+* **Cards & Shadows:** Menggunakan tata letak berbasis kartu (*card-based layout*) dengan bayangan lembut (*soft shadows*) untuk tampilan yang lebih bersih dan elegan.
+* **Interaksi:** Menambahkan efek *hover* pada tombol dan daftar item, serta transisi halus (*smooth transitions*) saat menambah atau menghapus item.
+* **Responsif:** Tata letak kini sepenuhnya responsif dan tampil rapi (terpusat) di berbagai ukuran layar.
+
+
+#### 1. BEFORE
+![alt text](image-1.png)
+
+#### 2. AFTER
+![alt text](image.png)
+
 
 ## Recommended IDE Setup
 

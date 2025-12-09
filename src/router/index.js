@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Todo from '@/views/Todo.vue'
-import Completed from '@/views/Completed.vue'
+import Todo from '@/views/TodoView.vue'
+import Completed from '@/views/CompletedView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
